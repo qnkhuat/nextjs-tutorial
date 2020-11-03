@@ -26,16 +26,19 @@ img {
   display: block;
 }
 
-ul{
+ul.ul-arrow{
     margin:0;
     padding:0;
-    li.li-arrow {
+    li{
 	list-style-type: None;
 	:before {
 	  content: "»"; /* FontAwesome Unicode */
 	  display: inline-block;
 	  width: 1em; /* same as padding-left set on li */
 	  color: black;
+	  position: relative;
+	  top: -0.05em;
 	}
     }
 }
+

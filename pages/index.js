@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout, {siteName, siteDescription, siteTitle, displayPages } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 
@@ -22,15 +23,17 @@ export default function Home({ allPostsData }) {
 				<div id='profile' className="flex-col">
 					<img
 						src="/images/profile.jpg"
-						className="w-40 rounded-2xl border-black border-2"
+						className="w-40 rounded-2xl"
 					/>
 					<h1>{siteName}</h1>
 					<h3>{siteDescription}</h3>
 					<div id="urls" className="mt-3">
-						<ul className="">
+						<ul className="ul-arrow">
 							{displayPages.map(({ name, url }) => (
-								<li className="li-arrow" key={name}>
-									<a href={url}>{name}</a>
+								<li className="" key={name}>
+									<Link href={url}>
+										<a className="text-green-500">{name}</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -56,5 +59,3 @@ export default function Home({ allPostsData }) {
     </Layout>
   )
 }
-
-

@@ -1,3 +1,4 @@
+import styles from "./layout.module.scss"
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -8,7 +9,7 @@ export const siteTitle = "An ordinary Homo Sapiens's blog"
 export const displayPages = [
 	{
 		"name":"Blog",
-		"url": "/blog"
+		"url": "/posts"
 	},
 	{
 		"name":"About",
@@ -42,25 +43,32 @@ export default function Layout({ children, home }) {
 				//<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			<header className="">
-				{!home ? (
+				{home ? (
 					<>
-						<Link href="/">
-							<a>
-								<img
-									src="/images/profile.jpg"
-									className=""
-									alt={siteName}
-								/>
-							</a>
-						</Link>
-						<h2 className="">
-							<Link href="/">
-								<a className="">{siteName}</a>
-							</Link>
-						</h2>
 					</>
 				):(
 					<>
+						<div id="navbar" className="flex justify-between container">
+							<div>
+								<Link href="/">
+									<a className={styles.h_site}
+									>Ngoc<br></br>Khuat</a>
+								</Link>
+							</div>
+
+							<div>
+								<ul className='list-none text-right text-lg m-0'>
+									{displayPages.map(({ name, url }) => (
+										<li className="" key={name}>
+											<Link href={url}>
+												<a className="text-black-500">{name}</a>
+											</Link>
+										</li>
+									))}
+								</ul>
+
+							</div>
+						</div>
 					</>
 				)}
 			</header>
