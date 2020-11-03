@@ -1,66 +1,70 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Earther'
-export const siteTitle = 'Eathers are rescuing the earth'
+// TODO : move these info to a yaml
+export const siteName= 'Ngoc Q. Khuat'
+export const siteDescription = "I try my best do do goods"
+export const siteTitle = "An ordinary Homo Sapiens's blog"
+export const displayPages = [
+	{
+		"name":"Blog",
+		"url": "/blog"
+	},
+	{
+		"name":"About",
+		"url":"/about"
+	},
+	{
+		"name":"My life",
+		"url":"/timeline"
+	},
+	{
+		"name":"Contact",
+		"url":"/contact"
+	}
+]
 
 export default function Layout({ children, home }) {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-    </div>
-  )
+	return (
+		<div>
+			<Head>
+				<link rel="icon" href="/favicon.ico" />
+				<meta
+					name="description" content={siteDescription}
+				/>
+				<meta
+					property="og:image"
+					content={`https://og-image.now.sh/${encodeURI(
+						siteTitle
+					)}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+				/>
+				<meta name="og:title" content={siteTitle} />
+				//<meta name="twitter:card" content="summary_large_image" />
+			</Head>
+			<header className="">
+				{!home ? (
+					<>
+						<Link href="/">
+							<a>
+								<img
+									src="/images/profile.jpg"
+									className=""
+									alt={siteName}
+								/>
+							</a>
+						</Link>
+						<h2 className="">
+							<Link href="/">
+								<a className="">{siteName}</a>
+							</Link>
+						</h2>
+					</>
+				):(
+					<>
+					</>
+				)}
+			</header>
+			<main>{children}</main>
+		</div>
+	)
 }

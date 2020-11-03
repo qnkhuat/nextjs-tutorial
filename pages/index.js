@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Layout, {siteName, siteDescription, siteTitle, displayPages } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
@@ -15,15 +14,36 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
+			<Head>
+				<title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>…</section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+
+			<div id='homepage' className="container flex items-center h-screen">
+				<div id='profile' className="flex-col">
+					<img
+						src="/images/profile.jpg"
+						className="w-40 rounded-2xl border-black border-2"
+					/>
+					<h1>{siteName}</h1>
+					<h3>{siteDescription}</h3>
+					<div id="urls" className="mt-3">
+						<ul className="">
+							{displayPages.map(({ name, url }) => (
+								<li className="li-arrow" key={name}>
+									<a href={url}>{name}</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<section className="hidden">
+				<h2 className="">Blog</h2>
+        <ul className="">
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className="" key={id}>
               <a href={`/posts/${id}`}>{title}</a>
               <br />
               {id}
