@@ -27,8 +27,6 @@ img {
 }
 
 ul.ul-arrow{
-    margin:0;
-    padding:0;
     li{
 	list-style-type: None;
 	:before {
@@ -42,3 +40,27 @@ ul.ul-arrow{
     }
 }
 
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Editor */
+.img-center {
+  display: block;
+  margin:auto;
+  width: 70%;
+}
+figure img{
+  margin:auto;
+}
+.text-center {
+  text-align: center;
+  width: 100%;
+}
+
+.image-latex div {
+    display:contents !important;
+}
