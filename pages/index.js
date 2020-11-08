@@ -6,7 +6,7 @@ import Layout, {siteName, siteDescription, displayPages } from '../components/la
 export default function Home() {
   return (
     <Layout home>
-			<div id='homepage' className="flex items-center h-full absolute">
+			<div id='homepage' className="center w-4/5">
 				<div id='profile' className="flex-col">
 					<img
 						src="/images/profile.jpg"

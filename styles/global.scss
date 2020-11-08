@@ -30,6 +30,12 @@ img {
   display: block;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
 ul.ul-arrow{
     li{
 	list-style-type: None;
@@ -45,10 +51,6 @@ ul.ul-arrow{
 }
 
 
-ul {
-    margin: 0;
-    padding: 0;
-}
 
 
 /* Editor */
@@ -67,4 +69,26 @@ figure img{
 
 .image-latex div {
     display:contents !important;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+	p {
+		font-size:0.9rem;
+		display: inline;
+		font-style: italic;
+	}
+}
+
+
+.center {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
