@@ -2,21 +2,11 @@ import fs from 'fs'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, {siteName, siteDescription, displayPages } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <Layout home>
-			<div id='homepage' className="container flex items-center h-screen">
+			<div id='homepage' className="flex items-center h-full absolute">
 				<div id='profile' className="flex-col">
 					<img
 						src="/images/profile.jpg"
