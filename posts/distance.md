@@ -7,7 +7,7 @@ date: "2020-10-13"
 
 > This post aims to find out: How do we measure the distance from Earth to the Sun, Planets and Stars?
 
-Let's start with a simpler question: how do we measure how far it is from the ground to a tree's top?
+Let's start with a simpler question: how do we measure the distance from the ground to a tree's top?
 
 **Short answer:** Triangulation.
 

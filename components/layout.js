@@ -1,4 +1,4 @@
-import styles from "./layout.module.scss"
+import styles from "../styles/layout.module.scss"
 import Head from 'next/head'
 import Link from 'next/link'
 

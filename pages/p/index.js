@@ -39,7 +39,7 @@ export default function Posts({ allPostsData }) {
 												{formatDateStr(date)}
 											</div>
 											<div>
-												<Link href={`/p/${id}`}>
+												<Link href={`/${id}`}>
 													<a className="capitalize">{title}</a>
 												</Link>
 											</div>
