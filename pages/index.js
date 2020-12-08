@@ -1,11 +1,14 @@
 import fs from 'fs'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout, {siteName, siteDescription, displayPages } from '../components/layout'
+import Layout, {siteName, siteTitle, siteDescription, displayPages } from '../components/layout'
 
 export default function Home() {
   return (
     <Layout home>
+			<Head>
+				<title>{siteTitle}</title>
+			</Head>
 			<div id='homepage' className="center w-4/5">
 				<div id='profile' className="flex-col">
 					<img
