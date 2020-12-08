@@ -1,7 +1,12 @@
 import Layout from "../components/layout"
+import Head from 'next/head'
 export default function Error() {
   return (
     <Layout>
+			<Head>
+				<title>Site not found!</title>
+			</Head>
+
 			<h2 className='text-center m-0'>I'm working on it</h2>	
 			<h4 className="text-center m-0">Enjoy!</h4>
 			<div className="iframe-wrapper">
