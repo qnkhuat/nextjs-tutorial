@@ -9,7 +9,7 @@ export const siteTitle = "An ordinary Homo Sapiens's blog"
 export const displayPages = [
 	{
 		"name":"Blog",
-		"url": "/p"
+		"url": "/blog"
 	},
 	{
 		"name":"About",
