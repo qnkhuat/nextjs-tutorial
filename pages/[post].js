@@ -9,7 +9,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className='container'>
+			<article className='container'>
         <h1 className="mb-0">{postData.title}</h1>
 				<p className="text-gray-500 text-sm m-0">Posted: {formatDateStr(postData.date)}</p>
 				<p className="text-gray-500 text-sm m-0">Categories: {postData.categories}</p>

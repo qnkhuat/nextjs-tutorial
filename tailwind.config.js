@@ -10,6 +10,10 @@ module.exports = {
 	theme: {
 		container: {
 			center: true,
+			screens: {
+         sm: "95%",
+         xl: "880px"
+      }
 		}
 	},
 	variants: {},
