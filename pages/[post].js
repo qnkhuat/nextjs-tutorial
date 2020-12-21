@@ -9,6 +9,8 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
 				<meta name="og:title" content={postData.title} />
+				<meta name="description" content={postData.title}/>
+
       </Head>
 			<article className='container'>
         <h1 className="mb-0">{postData.title}</h1>
