@@ -15,7 +15,7 @@ export default function Home() {
 						src="/images/profile.jpg"
 						className="w-40 rounded-2xl"
 					/>
-					<h1 className='mb-0'>{siteName}</h1>
+					<h1 className='mb-0 name'>{siteName}</h1>
 					<h4 className="m-0">{siteDescription}</h4>
 					<div id="urls" className="mt-3">
 						<ul className="ul-arrow">
