@@ -10,7 +10,7 @@ export default function Error() {
 			<h2 className='text-center m-0'>I'm working on it</h2>	
 			<h4 className="text-center m-0">Enjoy!</h4>
 			<div className="iframe-wrapper">
-				<iframe className='iframe'src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+				<iframe className='iframe'src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameBorder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullScreen></iframe>
 				<style jsx>{`
 				.iframe-wrapper{
 					position:relative;

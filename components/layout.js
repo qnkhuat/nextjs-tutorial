@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
 	return (
 		<div className="container px-4 sm:px-0">
 			<Head>
-				<link rel="shortcut icon" href="/favicon.ico" />
+				<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 				<meta
 					name="description" content={siteDescription}
 				/>
