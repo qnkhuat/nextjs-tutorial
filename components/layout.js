@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 // TODO : move these info to a yaml
 export const siteName= 'Ngoc Q. Khuat'
-export const siteDescription = "I try my best to be good"
+export const siteDescription = "Hi, I'm an Earther and I try my best to be good"
 export const siteTitle = "An ordinary Homo Sapiens's blog"
 export const displayPages = [
 	{
