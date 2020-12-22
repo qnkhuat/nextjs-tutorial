@@ -27,7 +27,7 @@ export default function Posts({ allPostsData }) {
 				{Object.keys(allPostsData).map((cat, i) => {
 					return (
 						<>
-							<h3 className='capitalize'>{cat}</h3>
+							<h3 className='lowercase'>{cat}</h3>
 							<ul>
 								{allPostsData[cat].map(({ id, title, categories, date}) => (
 									<li className="list-none" key={id}>
