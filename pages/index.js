@@ -16,7 +16,7 @@ export default function Home() {
 						className="w-40 rounded-2xl"
 					/>
 					<h1 className='mb-0 name'>{siteName}</h1>
-					<h4 className="m-0">{siteDescription}</h4>
+					<h4 className="m-0">Hi, I'm an <Link href="/earther">Earther</Link> and I'm trying my best to be good</h4>
 					<div id="urls" className="mt-3">
 						<ul className="ul-arrow">
 							{displayPages.map(({ name, url }) => (

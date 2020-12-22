@@ -11,7 +11,7 @@ export default function Post({ postData }) {
 				<meta name="og:title" content={postData.title} />
 				<meta name="description" content={postData.title}/>
 
-      </Head>
+				</Head>
 			<article className='container'>
         <h1 className="mb-0">{postData.title}</h1>
 				<p className="text-gray-500 text-sm m-0">Posted: {formatDateStr(postData.date)}</p>

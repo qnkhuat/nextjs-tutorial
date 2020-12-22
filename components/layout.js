@@ -4,23 +4,23 @@ import Link from 'next/link'
 
 // TODO : move these info to a yaml
 export const siteName= 'Ngoc Q. Khuat'
-export const siteDescription = "Hi, I'm an Earther and I try my best to be good"
+export const siteDescription = "Hi, I'm an Earther and I'm trying my best to be good" // If change this, change in pages/index.js too
 export const siteTitle = "An ordinary Homo Sapiens's blog"
 export const displayPages = [
 	{
-		"name":"Blog",
+		"name":"blog",
 		"url": "/blog"
 	},
 	{
-		"name":"About",
+		"name":"about",
 		"url":"/about"
 	},
 	{
-		"name":"My life",
+		"name":"my life",
 		"url":"/timeline"
 	},
 	{
-		"name":"Contact",
+		"name":"contact",
 		"url":"/contact"
 	}
 ]
