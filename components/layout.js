@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 // TODO : move these info to a yaml
 export const siteName= 'Ngoc Q. Khuat'
-export const siteDescription = "Hi, I'm an Earther and I'm trying my best to be good" // If change this, change in pages/index.js too
+export const siteDescription = "👋, I'm an Earther. What do you think about Solar Energy?" // If change this, change in pages/index.js too
 export const siteTitle = "An ordinary Homo Sapiens's blog"
 export const displayPages = [
 	{
