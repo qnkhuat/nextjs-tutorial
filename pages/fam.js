@@ -12,7 +12,7 @@ export default function Error() {
 				<meta name="description" content="It's okay to cry even if we are adult :'("/>
 			</Head>
 
-			<h2 className='text-center m-0'>It's near the end of the year</h2>	
+			<h2 className='text-center m-0'>2020 is approaching the end</h2>	
 			<h4 className="text-center m-0">And these songs bring back a lot of good memories about my family to me.</h4>
 			<h4 className='text-center m-0'>So, I hope it brings yours too 😉</h4>
 			<div className="iframe-wrapper">
