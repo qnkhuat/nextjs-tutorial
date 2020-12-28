@@ -13,7 +13,7 @@ export default function Error() {
 			</Head>
 
 			<h2 className='text-center m-0'>2020 is approaching the end</h2>	
-			<h4 className="text-center m-0">Let's take get some time appreciate what we are currently have.</h4>
+			<h4 className="text-center m-0">Let's take get some time to appreciate what we currently have.</h4>
 			<div className="iframe-wrapper">
 				<iframe className='iframe' src="https://open.spotify.com/embed/playlist/7lfjpRWfkClvzxlLqwRUco" allowtransparency="true" allow="encrypted-media"></iframe>
 				<style jsx>{`
