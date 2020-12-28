@@ -14,7 +14,7 @@ export default function Error() {
 
 			<h2 className='text-center m-0'>It's near the end of the year</h2>	
 			<h4 className="text-center m-0">And these songs bring back a lot of good memories about my family to me.</h4>
-			<h4 className='text-center m-0'>So, I hope it brings your too</h4>
+			<h4 className='text-center m-0'>So, I hope it brings yours too 😉</h4>
 			<div className="iframe-wrapper">
 				<iframe className='iframe' src="https://open.spotify.com/embed/playlist/7lfjpRWfkClvzxlLqwRUco" allowtransparency="true" allow="encrypted-media"></iframe>
 				<style jsx>{`
