@@ -5,6 +5,8 @@ export default function Error() {
 		<Layout>
 			<Head>
 				<title>2021 in Conway game of life</title>
+				<meta name="og:title" content="2021 in Conway game of life" />
+				<meta name="description" content="https://github.com/qnkhuat/lifeterm"/>
 			</Head>
 
 			<h2 className='text-center m-0'>Wanna see how is 2021 like in <a href="http://conwaylife.com">Conway</a> game of life?</h2>	
