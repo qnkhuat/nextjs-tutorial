@@ -11,7 +11,7 @@ export default function Error() {
 
 			<h2 className='text-center m-0'>Wanna see how is 2021 like in <a href="http://conwaylife.com">Conway</a>'s game of life?</h2>	
 			<div className="iframe-wrapper">
-				<iframe className='iframe' src="https://www.youtube.com/embed/kT_zufFcNt8?autoplay=1" frameBorder="0" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
+				<iframe className='iframe' src="https://www.youtube.com/embed/kT_zufFcNt8" frameBorder="0" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
 				<style jsx>{`
 				.iframe-wrapper{
 					position:relative;
