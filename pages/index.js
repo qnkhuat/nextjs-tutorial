@@ -12,9 +12,10 @@ export default function Home() {
 			<div id='homepage' className="center w-4/5">
 				<div id='profile' className="flex-col">
 					<img
-						src="/images/profile.jpg"
-						className="w-40 rounded-2xl"
+						src="/images/crazy_frog.gif"
+						className="w-60 rounded-2xl"
 					/>
+
 					<h1 className='mb-0 name'>{siteName}</h1>
 					<h4 className="m-0">👋, I'm an <Link href="/earther">Earther</Link>. What do you think about Solar Energy?</h4>
 					<div id="urls" className="mt-3">
