@@ -1,29 +1,7 @@
 import styles from "../styles/layout.module.scss"
+import {siteName, siteDescription, siteTitle, displayPages} from "../components/constants"
 import Head from 'next/head'
 import Link from 'next/link'
-
-// TODO : move these info to a yaml
-export const siteName= 'Ngoc Q. Khuat'
-export const siteDescription = "👋, I'm an Earther. What do you think about Solar Energy?" // If change this, change in pages/index.js too
-export const siteTitle = "An ordinary Homo Sapiens's blog"
-export const displayPages = [
-	{
-		"name":"blog",
-		"url": "/blog"
-	},
-	{
-		"name":"about",
-		"url":"/about"
-	},
-	{
-		"name":"my life",
-		"url":"/timeline"
-	},
-	{
-		"name":"contact",
-		"url":"/contact"
-	}
-]
 
 export default function Layout({ children, home }) {
 	return (

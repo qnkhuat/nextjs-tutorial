@@ -13,6 +13,9 @@ export default function Home() {
 			</Head>
 			<div id='homepage' className="center w-4/5">
 				<Profile></Profile>
+				<div id='now'> 
+					
+				</div>
 			</div>
     </Layout>
   )
