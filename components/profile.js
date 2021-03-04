@@ -13,7 +13,7 @@ export default function Profile() {
 			<h1 className='mb-0 name'>{siteName}</h1>
 			<h4 className="m-0">👋, I'm an <Link href="/earther">Earther</Link>. What do you think about Solar Energy?</h4>
 			<div id="urls" className="mt-3">
-				<ul className="ul-arrow">
+				<ul className="ul-arrow m-0 p-0">
 					{displayPages.map(({ name, url }) => (
 						<li className="" key={name}>
 							<Link href={url}>

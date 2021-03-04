@@ -1,7 +1,8 @@
 import _ from "lodash"
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout, {siteName, siteDescription, siteTitle, displayPages } from '../../components/layout'
+import Layout from '../../components/layout'
+import {siteTitle} from "../../components/constants"
 import { getSortedPostsData  } from '../../lib/posts'
 import { formatDateStr} from "../../lib/utils"
 
@@ -28,7 +29,7 @@ export default function Posts({ allPostsData }) {
 					return (
 						<>
 							<h3 className='lowercase'>{cat}</h3>
-							<ul>
+							<ul className='m-0 p-0'>
 								{allPostsData[cat].map(({ id, title, categories, date}) => (
 									<li className="list-none" key={id}>
 										<div className="flex-row sm:flex">
