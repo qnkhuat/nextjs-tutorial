@@ -6,7 +6,7 @@ export default function Profile() {
 	return (
 		<div>
 			<img
-				src="/images/crazy_frog.gif"
+				src="/images/profile.jpg"
 				className="w-60 rounded-2xl"
 			/>
 
