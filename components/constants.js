@@ -15,7 +15,7 @@ export const displayPages = [
 		"url":"/about"
 	},
 	{
-		"name":"contact",
-		"url":"/contact"
+		"name":"resume",
+		"url":"https://www.notion.so/qnkhuat/Ngoc-Q-Khuat-78a606d8f7764ed9b7ab8a1c97d1bb84"
 	}
 ]
